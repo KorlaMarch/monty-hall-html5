@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Monty Hall</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="row">Monty Hall</h1>
+      <main id="game" class="mt-4">
+        <div id="doorpic" class="row">
+          <section class="col">
+          <img id="idoor1" class="idoor img-fluid" src="door.png"/>
+          </section>
+          <section class="col">
+          <img id="idoor2" class="idoor img-fluid" src="door.png"/>
+          </section>
+          <section class="col">
+          <img id="idoor3" class="idoor img-fluid" src="door.png"/>
+          </section>
+        </div>
+        <div id="status" class="row mt-3">
+          Welcome to the monty hall game! 
+        </div>
+        <div id="door" class="row mt-1">
+          <button type="button" id="door1" class="btn btn-door mt-2 mx-2" disabled>Door 1</button>
+          <button type="button" id="door2" class="btn btn-door mt-2 mx-2" disabled>Door 2</button>
+          <button type="button" id="door3" class="btn btn-door mt-2 mx-2" disabled>Door 3</button>
+        </div>
+        <div id="ssc" class="row mt-1">
+          <button type="button" id="stay" class="btn btn-ss mx-3 mt-2" disabled>Stay</button>
+          <button type="button" id="swap" class="btn btn-ss mx-3 mt-2" disabled>Switch</button>
+        </div>
+        <div id="control" class="row mt-1">
+          <button type="button" id="new" class="btn btn-ss mx-3 mt-2">New Game</button>
+          <button type="button" id="reset" class="btn btn-ss mx-3 mt-2">Reset Statistic</button>
+          <button type="button" class="btn btn-ss mx-3 mt-2" data-toggle="collapse" data-target="#simulateAtt">Simulate Game</button>
+        </div>
+        <div class="collapse row mt-2" id="simulateAtt">
+          <div class="input-group">
+            <input type="number" id="gameNum" class="form-control" placeholder="Number of Games...">
+            <span class="input-group-btn">
+              <button class="btn btn-info" id="simulate" type="button">Go!</button>
+            </span>
+          </div>
+        </div>
+        <div id="statistic" class="row mt-2">
+          <p><b>Win : </b><span id="wcount"></span> <b>Loss : </b><span id="lcount"></span> <b>Total : </b><span id="tcount">12</span> <b>W/R % : </b><span id="percentw"></span></p>
+          <canvas id="wgraph" width="400" height="300"></canvas>
+        </div>
+      </main>
+      <foorter class="row text-center mt-5">
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div><br><b>© 2017 Khemarat Boonyapaluk</b></div>
+      </foorter>
+    </div>
+    
+    
+    
+  </body>
+</html>

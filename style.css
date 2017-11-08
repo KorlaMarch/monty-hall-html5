@@ -1,0 +1,41 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Lobster|Play');
+
+body {
+  background-color: #EEE2DC;
+  font-family: 'Play', sans-serif;
+  padding: 5px 25px;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 4rem;
+  color: #AC3B61;
+}
+
+#game > .row, .container > .row{
+  justify-content: center;
+}
+
+.btn-door{
+  background: #EDC7B7;
+}
+.btn-ss{
+  background: #FFFFFF;
+}
+
+#doorpic > section{
+  margin: 0 2vw;
+}
+
+.dselected{
+  -webkit-filter: drop-shadow(0px 0px 5px #494);
+  filter: drop-shadow(0px 0px 5px #494);
+}
+
+.num-invalid{
+  box-shadow: 0 0 5px red;
+}
