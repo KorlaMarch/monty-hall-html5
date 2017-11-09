@@ -39,3 +39,9 @@ h1 {
 .num-invalid{
   box-shadow: 0 0 5px red;
 }
+
+@media (min-width: 992px) {
+  #mainContainer {
+    width: 50vw;
+  }
+}

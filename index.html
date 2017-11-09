@@ -17,7 +17,7 @@
     <script src="game.js"></script>
   </head>
   <body>
-    <div class="container text-center">
+    <div class="container text-center" id="mainContainer">
       <h1 class="row">Monty Hall</h1>
       <main id="game" class="mt-4">
         <div id="doorpic" class="row">
@@ -32,7 +32,7 @@
           </section>
         </div>
         <div id="status" class="row mt-3">
-          Welcome to the monty hall game! 
+          Welcome to the monty hall game!
         </div>
         <div id="door" class="row mt-1">
           <button type="button" id="door1" class="btn btn-door mt-2 mx-2" disabled>Door 1</button>
@@ -56,18 +56,18 @@
             </span>
           </div>
         </div>
-        <div id="statistic" class="row mt-2">
-          <p><b>Win : </b><span id="wcount"></span> <b>Loss : </b><span id="lcount"></span> <b>Total : </b><span id="tcount">12</span> <b>W/R % : </b><span id="percentw"></span></p>
-          <canvas id="wgraph" width="400" height="300"></canvas>
+        <div id="statistic" class="row mt-2 justify-content-around mx-lg-5">
+            <span class="col"><b>Win : </b><span id="wcount"></span></span>
+            <span class="col"><b>Loss : </b><span id="lcount"></span></span>
+            <span class="col"><b>Total : </b><span id="tcount"></span></span>
+            <span class="col"><b>W/R % : </b><span id="percentw"></span></span>
         </div>
+        <canvas id="wgraph" width="400" height="250" class="row"></canvas>
       </main>
-      <foorter class="row text-center mt-5">
-        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> and <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-        <div><br><b>© 2017 Khemarat Boonyapaluk</b></div>
-      </foorter>
+      <footer class="mt-5 text-center">
+        <div class="row col justify-content-center">Icons made by&nbsp;<a href="http://www.freepik.com" title="Freepik">Freepik</a>&nbsp;and&nbsp;<a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a>&nbsp;from&nbsp;<a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>&nbsp;is licensed by&nbsp;<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div class="row col justify-content-center"><b>© 2017 Khemarat Boonyapaluk</b></div>
+      </footer>
     </div>
-    
-    
-    
   </body>
 </html>
